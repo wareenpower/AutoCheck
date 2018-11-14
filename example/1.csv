@@ -1,0 +1,4 @@
+Index,Name,Part_number,Test_number,Script_result,AvgTime,Item_result,Info
+1,iveshu, part1, test2, True,400.0, [True; True; True; True; True; True; True; True; True; True], Nothing
+2,iveshu, part1, test2, True,500.0, [True; True; True; True; True; True; True; True; True; True], Nothing
+3,Test, part1, test2, False,220.0, [True; True; True; True; True; True; True; True; True; True], Nothing

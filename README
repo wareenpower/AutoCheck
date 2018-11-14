@@ -1,0 +1,28 @@
+1. 配置
+    (1) 测试程序运行前，需要在check_data文件中配置测试题号参数CFG_QUES_NUMBER，格式参考：Part1_Test1"，区分大小写
+    (2) 配置测试数据，必须以CFG_QUES_NUMBER配置开头，参考实例：Part1_Test1_list_check_data
+    (3) 如果返回值不固定，需要自定义检查类型，修改check_data.CHECK_TYPE, 然后按照步骤三进行自定义方法编写
+
+
+2. 提交要求
+    (1) 测试类，如果包含非问题函数，请以下划线(_)开头，自动检测程序不会调用验证
+    (2) 文件命令要求：name_Partindex_Testindex.py，参考：Iveshu_Part1_Test1，区分大小写
+    (3) 测试脚本全部放到script目录下，按照命名规范命名，最后所有的脚本会根据题号要求自动验证
+
+
+3. 自定义验证方法编程要求
+    (1) 如果遇到不确定的输出结果，需要自定义验证方法func.check_return_result，在函数中新增一个check_type，check_type为题目编号，命名参考check_data.CFG_QUES_NUMBER，不区分大小写
+    (2) 在函数func.check_return_result中根据check_type新增一个分支，分支中调用验证方法
+    (3) 验证方法使用非静态方法，入参为函数的return结果和期望结果，在函数中根据题目要求编写验证函数
+
+
+4. 运行步骤
+    (1) 参考第一步完成配置后，把脚本按照题目编号要求拷贝到script目录下
+    (2) 使用python main.py运行检测程序
+    (3) 最后输出结果存储在result/result.csv文件中，一个题目一个文件，每个题目的文件每次检测为覆盖式的创建新文件
+    (4) 运行日志存储在log/check.log文件中
+    (5) 脚本需要在Linux上运行，因为windows只能获取到毫秒级的运行耗时，在Linux上可以获取到微秒级的运行耗时
+
+
+5. 结果说明
+    (1) 结果生成证result目录下，对应的题号csv文件，比如：part1_test1_result.csv
