@@ -142,7 +142,7 @@ class FuncLib:
                 self.save_log("Actual  keys: {real_keys}".format(real_keys=kwargs.keys()))
                 # return None
             with open(PATH_RESULT_FILE, "a") as f:
-                f.write("{name}, {part_index}, {test_index}, {result}, {time}, {list_result}, {info} \n".format(**kwargs))
+                f.write(" {name}, {part_index}, {test_index}, {result}, {time}, {list_result}, {info} \n".format(**kwargs))
         except Exception as e:
             self.save_log("Err01: save result failed, info: {info}".format(info=self.format_err(e)))
             self.save_log(traceback.format_exc())

@@ -12,7 +12,9 @@ class TestSolution:
         res = []
         nums.sort()
         for i in xrange(len(nums)-2):
-            if i > 0 and nums[i] == nums[i-1]:
+            if nums[i] > 0:
+                break
+            if nums[i] == nums[i-1]:
                 continue
             l_t, r = i+1, len(nums)-1
             while l_t < r:
@@ -23,10 +25,8 @@ class TestSolution:
                     r -= 1
                 else:
                     res.append((nums[i], nums[l_t], nums[r]))
-                    while l_t < r and nums[l_t] == nums[l_t+1]:
+                    while l_t < r and nums[l_t] == nums[l_t + 1]:
                         l_t += 1
-                    while l_t < r and nums[r] == nums[r-1]:
-                        r -= 1
                     l_t += 1
                     r -= 1
         return res

@@ -152,7 +152,6 @@ class FuncLib:
             # 3. Copy the file to main directory and rename the script name to skill_script.py
             self.save_log("Copy script file to check, file_name: {file_name}".format(file_name=script_file), True)
             shutil.copyfile(script_file, PATH_CHECK_SCRIPT_FILE)
-            time.sleep(0.001)
 
             # 4. Start to execute the script
             str_command = "python {check_script}".format(check_script=PATH_AUTO_CHECK_FILE)
