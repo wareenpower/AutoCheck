@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Hills_Part1_Test2.py</file>
+    <line>14</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Hills_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 naming convention violation</问题类>
+    <描述>Variable in function should be lowercase</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Hills_Part1_Test2.py</file>
+    <line>9</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Hills_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 naming convention violation</问题类>
+    <描述>Function name should be lowercase</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>48</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 naming convention violation</问题类>
+    <描述>Variable in function should be lowercase</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Snowhan_Part1_Test2.py</file>
+    <line>12</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Snowhan_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 naming convention violation</问题类>
+    <描述>Class names should use CamelCase convention</描述>
+  </problem>
+</problems>
+

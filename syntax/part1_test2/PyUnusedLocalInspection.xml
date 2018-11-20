@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Junacheng_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Junacheng_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local</问题类>
+    <描述>Local variable 'mid' value is not used</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Junacheng_Part1_Test2.py</file>
+    <line>39</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Junacheng_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unused local</问题类>
+    <描述>Local variable 'end' value is not used</描述>
+  </problem>
+</problems>
+

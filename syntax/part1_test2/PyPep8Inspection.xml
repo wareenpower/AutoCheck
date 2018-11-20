@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>17</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>26</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>34</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>38</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>49</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>51</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: no newline at end of file</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>24</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>34</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>35</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>38</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: whitespace before ';'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: multiple statements on one line (semicolon)</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: multiple statements on one line (semicolon)</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>40</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>45</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: whitespace before ')'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>46</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: whitespace after '('</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>46</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: whitespace before ')'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: whitespace before ')'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>48</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: indentation is not a multiple of four</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>49</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: indentation is not a multiple of four</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>50</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: indentation is not a multiple of four</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>50</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: whitespace after '('</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>50</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>50</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>51</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: indentation is not a multiple of four</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>52</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: indentation is not a multiple of four (comment)</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>52</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>53</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: indentation is not a multiple of four</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>59</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>64</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: multiple spaces after keyword</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>66</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: expected 2 blank lines after class or function definition, found 1</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>67</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>68</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>69</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: multiple spaces after keyword</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>69</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: no newline at end of file</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/huaguan_Part1_Test2.py</file>
+    <line>35</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/huaguan_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/fiona_Part1_Test2.py</file>
+    <line>6</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/fiona_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: expected 2 blank lines, found 1</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/fiona_Part1_Test2.py</file>
+    <line>16</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/fiona_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: block comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/fiona_Part1_Test2.py</file>
+    <line>27</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/fiona_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: expected 2 blank lines after class or function definition, found 1</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Wishluo_Part1_Test2.py</file>
+    <line>36</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Wishluo_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: expected 2 blank lines after class or function definition, found 1</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Wishluo_Part1_Test2.py</file>
+    <line>42</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Wishluo_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: no newline at end of file</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Iveshu_Part5_Test1.py</file>
+    <line>83</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Iveshu_Part5_Test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: continuation line under-indented for visual indent</描述>
+  </problem>
+</problems>
+

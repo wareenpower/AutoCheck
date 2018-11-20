@@ -8,14 +8,15 @@ import datetime
 
 # import the scientific module
 import numpy as np
-import pandas as pd
-import matplotlib as mp
+# import pandas as pd
+# import matplotlib as mp
 
 
-class SciCalc():
+class SciCalc:
 
     def __init__(self, log_path=""):
         self.__doc__ = "This class is used to scientific calc"
+        self.log_path = log_path
 
     def sort_result(self, file_path):
         # np.savetxt()

@@ -16,9 +16,10 @@ import check_data
     Project config
 """
 # 1. Path config, automatic generation based on environment
+QUESTION_PREFIX = check_data.CFG_QUES_NUMBER
 PATH_FUNC_FILE = CASE_PATH = str(os.path.abspath(__file__))
 PATH_PROJECT = PATH_FUNC_FILE.split(os.sep + "check" + os.sep + "func.py")[0]
-PATH_SCRIPT = PATH_PROJECT + os.sep + "script"
+PATH_SCRIPT = PATH_PROJECT + os.sep + "script" + os.sep + QUESTION_PREFIX.lower()
 
 # 2. File config
 PATH_LOG_FILE = PATH_PROJECT + os.sep + "log" + os.sep + "check.log"

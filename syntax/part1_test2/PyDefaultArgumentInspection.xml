@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Baby_Part1_Test2.py</file>
+    <line>12</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Baby_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Default argument is mutable</问题类>
+    <描述>Default argument value is mutable</描述>
+  </problem>
+</problems>
+

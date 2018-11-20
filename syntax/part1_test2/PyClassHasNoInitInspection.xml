@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Hills_Part1_Test2.py</file>
+    <line>5</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Hills_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Class has no __init__ method</问题类>
+    <描述>Class has no __init__ method</描述>
+  </problem>
+</problems>
+

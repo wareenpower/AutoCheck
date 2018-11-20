@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>45</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant parentheses</问题类>
+    <描述>Remove redundant parentheses</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>46</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant parentheses</问题类>
+    <描述>Remove redundant parentheses</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant parentheses</问题类>
+    <描述>Remove redundant parentheses</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/fiona_Part1_Test2.py</file>
+    <line>19</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/fiona_Part1_Test2.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Redundant parentheses</问题类>
+    <描述>Remove redundant parentheses</描述>
+  </problem>
+</problems>
+

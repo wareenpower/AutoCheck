@@ -9,8 +9,8 @@ import sys
 import os
 import shutil
 import subprocess
-import time
 import traceback
+import xml.dom.minidom as xml_dom
 
 sys.path.append('../')
 from check import check_data
@@ -20,17 +20,29 @@ from check import check_data
 """
 
 # 1. Path config, automatic generation based on environment
+QUESTION_PREFIX = check_data.CFG_QUES_NUMBER
 PATH_FUNC_FILE = CASE_PATH = str(os.path.abspath(__file__))
 PATH_PROJECT = PATH_FUNC_FILE.split(os.sep + "main" + os.sep + "func.py")[0]
-PATH_SCRIPT = PATH_PROJECT + os.sep + "script"
+PATH_SCRIPT = PATH_PROJECT + os.sep + "script" + os.sep + QUESTION_PREFIX.lower()
+
 
 # 2. File config
 PATH_LOG_FILE = PATH_PROJECT + os.sep + "log" + os.sep + "check.log"
 PATH_RESULT_FILE = PATH_PROJECT + os.sep + "result" + os.sep + "result.csv"
-PATH_RESULT_BACKUP_FILE = PATH_PROJECT + os.sep + "result" + os.sep + check_data.CFG_QUES_NUMBER.lower() + "_result.csv"
+PATH_RESULT_BACKUP_FILE = PATH_PROJECT + os.sep + "result" + os.sep + QUESTION_PREFIX.lower() + "_result.csv"
 PATH_CHECK_FILE = PATH_PROJECT + os.sep + "result" + os.sep + "check_file"
 PATH_CHECK_SCRIPT_FILE = PATH_PROJECT + os.sep + "check" + os.sep + "skill_script.py"
 PATH_AUTO_CHECK_FILE = PATH_PROJECT + os.sep + "check" + os.sep + "auto_check.py"
+
+# 3. Syntax config
+PATH_XML = PATH_PROJECT + os.sep + "syntax" + os.sep + QUESTION_PREFIX.lower()
+XML_SKILL_TYPE = [".descriptions.xml", "SpellCheckingInspection.xml"]
+PATH_RESULT_SYNTAX_TMP = PATH_PROJECT + os.sep + "result" + os.sep + "syntax_result.csv"
+PATH_RESULT_SYNTAX_BACKUP_FILE = PATH_PROJECT + os.sep + "result" + os.sep + QUESTION_PREFIX.lower() + "_syntax_result.csv"
+# Grammatical error point
+TOTAL_POINTS = 20
+TOTAL_SCORE = 10.0
+
 
 # 3. Log config
 LOG_FILE_MODE = "a"
@@ -78,15 +90,15 @@ class FuncLib:
                 console.setFormatter(formatter)
                 # Create an instance
                 logging.getLogger().addHandler(console)
-                logging.debug(str_info)
+                logging.debug(str(str_info))
                 # Solve the problem of repetition
                 logging.getLogger().removeHandler(console)
             else:
                 # The purpose of the separate write here is to delete the handle when the terminal outputs,
                 # to prevent repeated printing
-                logging.debug(str_info)
+                logging.debug(str(str_info))
         except Exception as e:
-            print str("ssss" + e.message)
+            print str(e.message)
             traceback.print_exc()
             pass
 
@@ -113,7 +125,7 @@ class FuncLib:
         list_script_file = []
         try:
             # Get the question number
-            str_quest_prefix = check_data.CFG_QUES_NUMBER
+            str_quest_prefix = QUESTION_PREFIX
 
             for root, dirs, files in os.walk(PATH_SCRIPT):
                 for file_name in files:
@@ -285,4 +297,150 @@ class FuncLib:
                 self.save_log("Result file: {result_file}".format(result_file=PATH_RESULT_BACKUP_FILE), True)
         except Exception as e:
             self.save_log("Backup result file failed, info: {info}".format(info=self.format_err(e)))
+            self.save_log(traceback.format_exc())
+
+    # ---------------------------------------------------------------------------------------------------------------
+    # Check syntax xml file and save the result
+    def xml_read(self, file_path, dict_result):
+        """
+        Read the syntax file and save result to the dictionary
+
+        :param str file_path: The syntax file path
+        :param dict dict_result: The check result
+        :return: None
+        """
+        try:
+            xml_temp_file = os.path.abspath(file_path)
+            dom_obj = xml_dom.parse(xml_temp_file)
+            element_obj = dom_obj.documentElement
+            list_file_elem = element_obj.getElementsByTagName("file")
+
+            for index, value in enumerate(list_file_elem):
+                file_path = value.firstChild.data
+                file_name = os.path.basename(file_path)
+                if file_name.lower().endswith(QUESTION_PREFIX.lower() + ".py"):
+                    list_user = file_name.lower().split("_")
+                    dict_result[list_user[0]] = dict_result.get(list_user[0], 0) + 1
+        except Exception as e:
+            self.save_log("Read xml file failed, info: {info}".format(info=self.format_err(e)))
+            self.save_log(traceback.format_exc())
+
+    def get_syntax_files(self):
+        """
+        Get the xml syntax file
+
+        :return: The syntax xml file list
+        """
+        list_xml_file = []
+        try:
+            for root, dirs, files in os.walk(PATH_XML):
+                for file_name in files:
+                    if file_name not in XML_SKILL_TYPE and file_name.lower().endswith(".xml"):
+                        list_xml_file.append(os.path.join(root, file_name))
+        except Exception as e:
+            self.save_log("Get xml file failed, info: {info}".format(info=self.format_err(e)))
+            self.save_log(traceback.format_exc())
+        self.save_log("Syntax xml file: number: {number}, file name list: {list_file}".format(list_file=list_xml_file,
+                                                                                              number=len(list_xml_file)), True)
+        return list_xml_file
+
+    def save_xml_result(self, dict_result):
+        """
+        Save the test result
+
+        :param dict_result:
+        :return: None
+            csv column:
+                Index,Name,Part_number,Test_number,Score,Deduction point, Total point
+        """
+        try:
+            b_do = True
+            while b_do:
+                # Step1. Clear syntax result file
+                if os.path.exists(PATH_RESULT_SYNTAX_TMP):
+                    os.remove(PATH_RESULT_SYNTAX_TMP)
+                if os.path.exists(PATH_RESULT_SYNTAX_BACKUP_FILE):
+                    os.remove(PATH_RESULT_SYNTAX_BACKUP_FILE)
+
+                # Step2. Get all the script files
+                list_script_file = self.get_script_list()
+                dict_syntax_result = {
+                    "name": "Name",
+                    "part_index": "Part number",
+                    "test_index": "Test number",
+                    "score": "Score",
+                    "deduction_point": "Deduction point",
+                    "total_point": "Total point"
+                }
+                self.save_one_syntax_result(**dict_syntax_result)
+
+                # Step3. Set default value
+                list_question = QUESTION_PREFIX.split("_")
+                if len(list_question) != 2:
+                    self.save_log("CFG_QUES_NUMBER configuration is invalid.")
+                    break
+                dict_syntax_result["part_index"] = list_question[0]
+                dict_syntax_result["test_index"] = list_question[1]
+                dict_syntax_result["total_point"] = TOTAL_POINTS
+                for index, value in enumerate(list_script_file):
+                    file_name = os.path.basename(value)
+                    str_user = file_name.split("_")[0].lower()
+                    dict_syntax_result["name"] = str_user
+                    dict_syntax_result["deduction_point"] = dict_result.get(str_user, 0)
+                    i_point = TOTAL_POINTS - int(dict_result.get(str_user, 0))
+                    if i_point < 0:
+                        i_point = 0
+                    i_score = (i_point * TOTAL_SCORE) / TOTAL_POINTS
+                    dict_syntax_result["score"] = i_score
+                    self.save_one_syntax_result(**dict_syntax_result)
+
+                b_do = False
+        except Exception as e:
+            self.save_log("Get xml file failed, info: {info}".format(info=self.format_err(e)))
+            self.save_log(traceback.format_exc())
+
+    def backup_syntax_result(self):
+        """
+        When the run is complete, rename the syntax result file
+
+        :return:
+        """
+        try:
+            # 1. Clear backup csv result
+            if os.path.exists(PATH_RESULT_SYNTAX_BACKUP_FILE):
+                os.remove(PATH_RESULT_SYNTAX_BACKUP_FILE)
+            if os.path.exists(PATH_RESULT_FILE):
+                try:
+                    import pandas as pd
+                    df = pd.read_csv(PATH_RESULT_SYNTAX_TMP)
+                    df.sort_values(by=[" Score", " Name"], axis=0, ascending=[False, True], inplace=True)
+                    df['Index'] = range(1, len(df) + 1)
+                    df = df.set_index('Index')
+                    df.to_csv(PATH_RESULT_SYNTAX_BACKUP_FILE)
+                    self.save_log("Result ranking", True)
+                except Exception as e:
+                    shutil.copyfile(PATH_RESULT_FILE, PATH_RESULT_BACKUP_FILE)
+                    self.save_log("Err: sort failed, info: {info}".format(info=self.format_err(e)))
+                self.save_log("Result file: {result_file}".format(result_file=PATH_RESULT_SYNTAX_BACKUP_FILE), True)
+        except Exception as e:
+            self.save_log("Backup result file failed, info: {info}".format(info=self.format_err(e)))
+            self.save_log(traceback.format_exc())
+
+    def save_one_syntax_result(self, **kwargs):
+        """
+        Save the syntax checking result
+
+        :param dict kwargs: The syntax checking result dictionary
+        :return: None
+        """
+        try:
+            list_keys = ["name", "part_index", "test_index", "score", "deduction_point", "total_point"]
+            if not all(map(kwargs.has_key, list_keys)):
+                self.save_log("Err: Result dictionary is invalid.")
+                self.save_log("Desired keys: {excepted_keys}".format(excepted_keys=list_keys))
+                self.save_log("Actual  keys: {real_keys}".format(real_keys=kwargs.keys()))
+            with open(PATH_RESULT_SYNTAX_TMP, "a") as f:
+                f.write(" {name}, {part_index}, {test_index}, {score}, {deduction_point}, {total_point}\n".format(**kwargs))
+        except Exception as e:
+            self.save_log("Get xml file failed, info: {info}".format(info=self.format_err(e)))
             self.save_log(traceback.format_exc())

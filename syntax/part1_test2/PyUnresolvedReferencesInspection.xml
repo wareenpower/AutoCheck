@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Iveshu_Part3_Test1.py</file>
+    <line>5</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Iveshu_Part3_Test1.py" />
+    <问题类 severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Unused import statement</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Baby_Part1_Test2.py</file>
+    <line>2</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Baby_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Unused import statement</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Junacheng_Part1_Test2.py</file>
+    <line>3</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Junacheng_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Unused import statement</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>16</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference 'sort' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>25</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>25</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>25</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>27</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>27</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>27</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>30</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>30</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py</file>
+    <line>30</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Cannot find reference '[' in 'array.py'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>3</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Unused import statement</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/fiona_Part1_Test2.py</file>
+    <line>3</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/fiona_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="NOT_USED_ELEMENT_ATTRIBUTES">Unresolved references</问题类>
+    <描述>Unused import statement</描述>
+  </problem>
+</problems>
+

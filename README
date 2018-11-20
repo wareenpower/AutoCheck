@@ -17,7 +17,7 @@
 
 
 4. 运行步骤
-    (1) 参考第一步完成配置后，把脚本按照题目编号要求拷贝到script目录下
+    (1) 参考第一步完成配置后，把脚本按照题目编号要求拷贝到script对应题号目录下
     (2) 使用python main.py运行检测程序
     (3) 最后输出结果存储在result/result.csv文件中，一个题目一个文件，每个题目的文件每次检测为覆盖式的创建新文件
     (4) 运行日志存储在log/check.log文件中
@@ -26,3 +26,13 @@
 
 5. 结果说明
     (1) 结果生成证result目录下，对应的题号csv文件，比如：part1_test1_result.csv
+
+
+6. 语法检查结果
+    (1) 信息参考/doc目录下的<语法规范自动检测.docx>
+
+
+7. PIP安装
+    set http_proxy=http://web-proxy.tencent.com:8080
+    set https_proxy=http://web-proxy.tencent.com:8080
+    python -m pip install --upgrade pip

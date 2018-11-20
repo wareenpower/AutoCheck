@@ -7,12 +7,18 @@
 CFG_QUES_NUMBER = "Part1_Test2"
 
 # ------------------------------------------------------------------------------------------
-# Check type. If the return value is not fixed, you need to customize the check type
+# Check type. If the return value is not fixed, you need to customize the check type, default value is EQUAL
 CHECK_TYPE = "EQUAL"
 
 # Question number
 SAVE_RETURN_DATA = False
 # ------------------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------------------
+# Part5_Test1 test data
+
+
+
 
 
 # ------------------------------------------------------------------------------------------

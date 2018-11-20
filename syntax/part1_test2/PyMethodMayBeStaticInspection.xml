@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/Rubyyi_Part1_Test1.py</file>
+    <line>11</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/Rubyyi_Part1_Test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">Method may be static</问题类>
+    <描述>Method &lt;code&gt;cmp_anagram&lt;/code&gt; may be 'static'</描述>
+  </problem>
+</problems>
+

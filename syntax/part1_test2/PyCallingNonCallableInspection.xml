@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>24</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Trying to call a non-callable object</问题类>
+    <描述>'list' object is not callable</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py</file>
+    <line>24</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/zukizhu_Part1_Test2.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Trying to call a non-callable object</问题类>
+    <描述>'list' object is not callable</描述>
+  </problem>
+</problems>
+
