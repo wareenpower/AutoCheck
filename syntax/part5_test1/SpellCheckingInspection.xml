@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Junacheng_Part5_Test1.py</file>
+    <line>8</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Junacheng_Part5_Test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'Junacheng'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>39</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'tdsql'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>41</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'myname'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>41</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'mytype'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>42</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'mytype'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>43</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'myname'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>43</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'tdsql'</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py</file>
+    <line>70</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py" />
+    <问题类 severity="TYPO" attribute_key="TYPO">Typo</问题类>
+    <描述>Typo: In word 'wechat'</描述>
+  </problem>
+</problems>
+

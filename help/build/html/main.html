@@ -1,0 +1,380 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>main package &#8212; AutoCheck 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">AutoCheck 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="main-package">
+<h1>main package<a class="headerlink" href="#main-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-main.check_syntax">
+<span id="main-check-syntax-module"></span><h2>main.check_syntax module<a class="headerlink" href="#module-main.check_syntax" title="Permalink to this headline">¶</a></h2>
+<p>The main programme of the AUTO-CHECK project</p>
+</div>
+<div class="section" id="module-main.func">
+<span id="main-func-module"></span><h2>main.func module<a class="headerlink" href="#module-main.func" title="Permalink to this headline">¶</a></h2>
+<p>Auto check function library</p>
+<dl class="class">
+<dt id="main.func.FuncLib">
+<em class="property">class </em><code class="descclassname">main.func.</code><code class="descname">FuncLib</code><a class="reference internal" href="_modules/main/func.html#FuncLib"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto check class</p>
+<dl class="method">
+<dt id="main.func.FuncLib.backup_result">
+<code class="descname">backup_result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.backup_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.backup_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>When the run is complete, rename the result file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.backup_syntax_result">
+<code class="descname">backup_syntax_result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.backup_syntax_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.backup_syntax_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>When the run is complete, rename the syntax result file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.clear_result">
+<code class="descname">clear_result</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.clear_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.clear_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the last remaining file before running the check</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.exe_command">
+<code class="descname">exe_command</code><span class="sig-paren">(</span><em>str_command</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.exe_command"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.exe_command" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute the shell command</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>str_command</strong> – The shell command</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.format_err">
+<code class="descname">format_err</code><span class="sig-paren">(</span><em>err_obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.format_err"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.format_err" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the error message. If the length of the error message is zero, return the error message “Unknown error”.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>err_obj</strong> – The error object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The formatted error message string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.get_script_list">
+<code class="descname">get_script_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.get_script_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.get_script_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of all scripts that meet the criteria</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The list of script file</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.get_script_summary">
+<code class="descname">get_script_summary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.get_script_summary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.get_script_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the check_file to generate script profile information</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the summary dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.get_syntax_files">
+<code class="descname">get_syntax_files</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.get_syntax_files"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.get_syntax_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the xml syntax file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The syntax xml file list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.run_script">
+<code class="descname">run_script</code><span class="sig-paren">(</span><em>script_file</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.run_script"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.run_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute script
+1. Write the file name to the check_file
+2. auto_check read the check_file to get the title number and related information</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>script_file</strong> – The full path of the script file</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="main.func.FuncLib.save_log">
+<em class="property">static </em><code class="descname">save_log</code><span class="sig-paren">(</span><em>str_info</em>, <em>b_print_log=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.save_log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.save_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the information in the log file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>str_info</strong> – The log information</li>
+<li><strong>b_print_log</strong> – The screen print log switch</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.save_one_syntax_result">
+<code class="descname">save_one_syntax_result</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.save_one_syntax_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.save_one_syntax_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the syntax checking result</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The syntax checking result dictionary</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.save_result">
+<code class="descname">save_result</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.save_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.save_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Program test completed, store execution results</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kwargs</strong> – the result information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.save_xml_result">
+<code class="descname">save_xml_result</code><span class="sig-paren">(</span><em>dict_result</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.save_xml_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.save_xml_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the test result</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>dict_result</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None
+csv column:<blockquote>
+<div>Index,Name,Part_number,Test_number,Score,Deduction point, Total point</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.write_col_name">
+<code class="descname">write_col_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.write_col_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.write_col_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the column name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="main.func.FuncLib.xml_read">
+<code class="descname">xml_read</code><span class="sig-paren">(</span><em>file_path</em>, <em>dict_result</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/func.html#FuncLib.xml_read"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.func.FuncLib.xml_read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the syntax file and save result to the dictionary</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The syntax file path</li>
+<li><strong>dict_result</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The check result</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-main.main">
+<span id="main-main-module"></span><h2>main.main module<a class="headerlink" href="#module-main.main" title="Permalink to this headline">¶</a></h2>
+<p>The main programme of the AUTO-CHECK project</p>
+</div>
+<div class="section" id="module-main.scilib">
+<span id="main-scilib-module"></span><h2>main.scilib module<a class="headerlink" href="#module-main.scilib" title="Permalink to this headline">¶</a></h2>
+<p>Scientific calculation</p>
+<dl class="class">
+<dt id="main.scilib.SciCalc">
+<em class="property">class </em><code class="descclassname">main.scilib.</code><code class="descname">SciCalc</code><span class="sig-paren">(</span><em>log_path=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/scilib.html#SciCalc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.scilib.SciCalc" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="main.scilib.SciCalc.sort_result">
+<code class="descname">sort_result</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main/scilib.html#SciCalc.sort_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.scilib.SciCalc.sort_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-main">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-main" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">main package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-main.check_syntax">main.check_syntax module</a></li>
+<li><a class="reference internal" href="#module-main.func">main.func module</a></li>
+<li><a class="reference internal" href="#module-main.main">main.main module</a></li>
+<li><a class="reference internal" href="#module-main.scilib">main.scilib module</a></li>
+<li><a class="reference internal" href="#module-main">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/main.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">AutoCheck 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Iveshu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>

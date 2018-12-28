@@ -4,7 +4,7 @@
 # ------------------------------------------------------------------------------------------
 # Check config, User define
 # Question number
-CFG_QUES_NUMBER = "Part1_Test2"
+CFG_QUES_NUMBER = "Part5_Test1"
 
 # ------------------------------------------------------------------------------------------
 # Check type. If the return value is not fixed, you need to customize the check type, default value is EQUAL
@@ -12,11 +12,78 @@ CHECK_TYPE = "EQUAL"
 
 # Question number
 SAVE_RETURN_DATA = False
-# ------------------------------------------------------------------------------------------
+
 
 # ------------------------------------------------------------------------------------------
-# Part5_Test1 test data
+Part7_Test1_list_check_data = [["./check_file/p7_t1/file1.txt"],
+                               ["./check_file/p7_t1/file2.txt"],
+                               ["./check_file/p7_t1/file3.txt"],
+                               ["./check_file/p7_t1/file4.txt"],
+                               ["./check_file/p7_t1/file5.txt"],
+                               ["./check_file/p7_t1/file6.txt"],
+                               ["./check_file/p7_t1/file7.txt"]]
+Part5_Test1_list_excepted_result = [[2.035494, 28],
+                                    [7.904545, 143],
+                                    [2.464196, 0],
+                                    [0.0, 0],
+                                    [1.973168, 59],
+                                    [4.169976, 136],
+                                    [2.576432, 2654]]
+# ------------------------------------------------------------------------------------------
+Part5_Test1_list_check_data = [
+    ['''{"eventId":101,"interface":{"para":{"id":"g514","rules":[{"name":"test1","type":"digest"}],"users":[{"user":"tdsql@%","type":"deny","match":"any","rules":[{"name":"test1","type":"digest"}]}]}}}''', [
+        "/interface/para/users/0/rules/0/name", "/interface/para/rules/0/type", "/eventId"], ["myname", "mytype", 100]],
+   # ['''{"eventId":101, "interface":{"para":{"id":"g514","rules":[{"name":"test1"},{"type":"digest"}],"users":{"user":"tdsql@%","type":"deny","6":"3"}}}}''', [
+     #   "/interface/para/rules/1/type", "/interface/para/users/6"], ["testtype", 6]],
+    ['''{"Id":"101", "header":{"funcNo":"IF01","mobile":"075512344565"},"payload":{"contact":[{"mobile":"123456789999",
+    "wechat":"test"}]}}''', ["/header/mobile", "/payload/contact/0/mobile", "/Id"], ["0755 839699", "13546467885", "100"]],
+    #['''{ "spec": [{"cpu": 2400},{"1": [{"dir": "/data1/tdsql/data"}, {"2": [ {"b": "b1"},{"3": [{"c": "c1"},{"4": [ {"d": "d1"},{"5": [{"0": "e1"},  {"e1": "e1"}] } ]  }] }]}]}],"66":"test" }''',
+        #["/spec/1/1/1/2/1/3/1/4/1/5/0/0", "/66"], ["00", "66"]]
+    ['''{"callee":"TDL","caller":"DES","eventId":101,"returnData":{"checklist":[{"checkmsg":"The target database is avilable","checkparam":"connect_able","checkresult":"true"},{"checkmsg":"The account is avilable","checkparam":"account_wr_rights","checkresult":"true"},{"checkmsg":"The character encode is valid","checkparam":"character_encode","checkresult":"true"},{"checkmsg":"All rule is valid","checkparam":"regex_correct","checkresult":"true"},{"checkmsg":"there is no close loop","checkparam":"close_loop","checkresult":"true"}],"dstdb":"null","dstid":"set_1528170341_308","dsttype":"mariadb","dstzkiplist":"10.238.24.227:2181","dstzkroot":"/innercity_1","errorcode":"0","forbidPersist":"false","groupid":"null","history":"","ispaused":"0","msg":"","regex_able":"accurate","rules":[{"dst":"`noshard`.`test7013`","num":1,"org":"`noshard`.`test4077`","tables":[{"dst":"noshard.test7013","org":"noshard.test4077"}]}],"runinfo":"","srcid":"set_1525845572_746552","srczkiplist":"10.246.132.225:2181","srczkroot":"/noshard_108","status":1,"synctype":"0","tablenum":1,"taskid":13,"updatecount":"0","thread_num":1,"updatetime":"1528223773"},"returnMsg":"ok","returnValue":0,"timestamp":1528271786,"version":"1.0"}''',["/version", "/returnData/updatetime","/returnData/updatecount","/returnData/synctype","/returnData/rules/0/tables/0/org","/returnData/rules/0/tables/0/dst","/returnData/rules/0/org",
+"/returnData/checklist/4/checkresult","/returnData/checklist/3/checkparam","/returnData/dsttype"]
+,["2.1", "1888666555","10","1","org.test","dst.test","org.org","true","correct","test"]]
+]
 
+Part5_Test1_list_excepted_result = [
+    [{'eventId': 100, 'interface': {'para': {'rules': [{'type': 'mytype', 'name': 'test1'}], 'id': 'g514', 'users': [
+        {'rules': [{'type': 'digest', 'name': 'myname'}], 'type': 'deny', 'user': 'tdsql@%', 'match': 'any'}]}}}],
+    #[{'eventId': 101, 'interface': {'para': {'rules': [{'name': 'test1'}, {'type': 'testtype'}],
+    #                                         'id': 'g514', 'users': {'type': 'deny', 'user': 'tdsql@%', '6': 6}}}}],
+    [{'header': {'mobile': '0755 839699', 'funcNo': u'IF01'}, 'Id': '100',
+        'payload': {'contact': [{'mobile': '13546467885', 'wechat': 'test'}]}}],
+    #[{'spec': [{'cpu': 2400}, {'1': [{'dir': '/data1/tdsql/data'}, {'2': [{'b': 'b1'},
+                                                                                #{'3': [{'c': 'c1'}, {'4': [{'d': 'd1'}, {'5': [{'0': '00'}, #{'e1': 'e1'}]}]}]}]}]}], '66': '66'}]
+
+    [{"eventId":101,"returnData":{"thread_num":1,"runinfo":"","regex_able":"accurate","ispaused":"0","dstid":"set_1528170341_308","dstzkiplist":"10.238.24.227:2181","srczkiplist":"10.246.132.225:2181","dsttype":"test","synctype":"1","errorcode":"0","tablenum":1,"taskid":13,"dstzkroot":"/innercity_1","msg":"","dstdb":"null","groupid":"null","status":1,"srczkroot":"/noshard_108","rules":[{"org":"org.org","dst":"`noshard`.`test7013`","num":1,"tables":[{"org":"org.test","dst":"dst.test"}]}],"checklist":[{"checkresult":"true","checkparam":"connect_able","checkmsg":"The target database is avilable"},{"checkresult":"true","checkparam":"account_wr_rights","checkmsg":"The account is avilable"},{"checkresult":"true","checkparam":"character_encode","checkmsg":"The character encode is valid"},{"checkresult":"true","checkparam":"correct","checkmsg":"All rule is valid"},{"checkresult":"true","checkparam":"close_loop","checkmsg":"there is no close loop"}],"srcid":"set_1525845572_746552","updatetime":"1888666555","updatecount":"10","forbidPersist":"false","history":""},"timestamp":1528271786,"caller":"DES","version":"2.1","returnValue":0,"returnMsg":"ok","callee":"TDL"}]
+]
+
+
+
+# ------------------------------------------------------------------------------------------
+#Part4_Test1 test data
+Part4_Test1_list_check_data = [[['applergegsgdfsdf', 'appenderwfgsdgdf', 'appeefrgg', 'appbcfgdgsgs', 'appacbfghdk', 'appkjdkhjhjh', 'appbuhkkuhm', 'appppppppx', 'appqiueirgsdgsg']],
+                               [['qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjd', 'qwejfljsljflsjde']],
+                               [['apple', 'app', 'alskjfldhf', 'jkjfdhghlsjlfjo', 'qwoeowuretuou', '', 'qoiuieureytryououo', 'lkhooruhhwhlkhkjljlhk', '']],
+                               [['', 'append', 'app', '', '', 'lkjhhkoe', 'app', 'apple', 'banana', 'append']],
+							   [['abc', 'cbd', 'efd', 'lkj', 'hgjljllkj', 'oiuyyiyiuouo','qlaldkjfdhglj','kokhhouojllj']],
+                               [['', '', '', '', '', '', '', '']]]
+
+Part4_Test1_list_excepted_result = [['app'],
+                                    ['qwejfljsljflsjd'],
+                                    [''],
+                                    [''],
+									[''],
+                                    ['']]
+
+# ------------------------------------------------------------------------------------------
+# Part3_Test1 test data
+Part3_Test1_list_check_data = [
+    [100, 10, [20, 70]]
+]
+
+Part3_Test1_list_excepted_result = [
+    []
+]
 
 
 

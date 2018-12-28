@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>10</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: inline comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>18</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: inline comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>21</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: inline comment should start with '# '</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>39</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>39</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: line too long (214 &gt; 150 characters)</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>45</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>45</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace after ','</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: missing whitespace around operator</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py</file>
+    <line>47</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Wishluo_Part5_test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: no newline at end of file</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py</file>
+    <line>66</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: continuation line under-indented for visual indent</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py</file>
+    <line>69</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: continuation line under-indented for visual indent</描述>
+  </problem>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py</file>
+    <line>72</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py" />
+    <问题类 severity="WEAK WARNING" attribute_key="INFO_ATTRIBUTES">PEP 8 coding style violation</问题类>
+    <描述>PEP 8: closing bracket does not match visual indentation</描述>
+  </problem>
+</problems>
+

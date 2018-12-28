@@ -25,7 +25,6 @@ PATH_FUNC_FILE = CASE_PATH = str(os.path.abspath(__file__))
 PATH_PROJECT = PATH_FUNC_FILE.split(os.sep + "main" + os.sep + "func.py")[0]
 PATH_SCRIPT = PATH_PROJECT + os.sep + "script" + os.sep + QUESTION_PREFIX.lower()
 
-
 # 2. File config
 PATH_LOG_FILE = PATH_PROJECT + os.sep + "log" + os.sep + "check.log"
 PATH_RESULT_FILE = PATH_PROJECT + os.sep + "result" + os.sep + "result.csv"
@@ -41,8 +40,8 @@ PATH_RESULT_SYNTAX_TMP = PATH_PROJECT + os.sep + "result" + os.sep + "syntax_res
 PATH_RESULT_SYNTAX_BACKUP_FILE = PATH_PROJECT + os.sep + "result" + os.sep + QUESTION_PREFIX.lower() + "_syntax_result.csv"
 # Grammatical error point
 TOTAL_POINTS = 20
+# Parameter must be a floating-point number to ensure that the divisor result is accurate to one decimal place
 TOTAL_SCORE = 10.0
-
 
 # 3. Log config
 LOG_FILE_MODE = "a"
@@ -392,6 +391,7 @@ class FuncLib:
                         i_point = 0
                     i_score = (i_point * TOTAL_SCORE) / TOTAL_POINTS
                     dict_syntax_result["score"] = i_score
+                    self.save_log("{User} result: {result}".format(User=str_user,result=dict_syntax_result))
                     self.save_one_syntax_result(**dict_syntax_result)
 
                 b_do = False
@@ -419,7 +419,7 @@ class FuncLib:
                     df.to_csv(PATH_RESULT_SYNTAX_BACKUP_FILE)
                     self.save_log("Result ranking", True)
                 except Exception as e:
-                    shutil.copyfile(PATH_RESULT_FILE, PATH_RESULT_BACKUP_FILE)
+                    shutil.copyfile(PATH_RESULT_SYNTAX_TMP, PATH_RESULT_SYNTAX_BACKUP_FILE)
                     self.save_log("Err: sort failed, info: {info}".format(info=self.format_err(e)))
                 self.save_log("Result file: {result_file}".format(result_file=PATH_RESULT_SYNTAX_BACKUP_FILE), True)
         except Exception as e:

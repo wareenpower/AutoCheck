@@ -1,0 +1,332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>check package &#8212; AutoCheck 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">AutoCheck 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="check-package">
+<h1>check package<a class="headerlink" href="#check-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-check.auto_check">
+<span id="check-auto-check-module"></span><h2>check.auto_check module<a class="headerlink" href="#module-check.auto_check" title="Permalink to this headline">¶</a></h2>
+<p>Auto check script programme</p>
+</div>
+<div class="section" id="module-check.check_data">
+<span id="check-check-data-module"></span><h2>check.check_data module<a class="headerlink" href="#module-check.check_data" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-check.func">
+<span id="check-func-module"></span><h2>check.func module<a class="headerlink" href="#module-check.func" title="Permalink to this headline">¶</a></h2>
+<p>Auto check function library</p>
+<dl class="class">
+<dt id="check.func.FuncLib">
+<em class="property">class </em><code class="descclassname">check.func.</code><code class="descname">FuncLib</code><a class="reference internal" href="_modules/check/func.html#FuncLib"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib" title="Permalink to this definition">¶</a></dt>
+<dd><p>Auto check class</p>
+<dl class="method">
+<dt id="check.func.FuncLib.call_function">
+<code class="descname">call_function</code><span class="sig-paren">(</span><em>obj_class</em>, <em>*args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.call_function"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.call_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Automatic test function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>obj_class</strong> – The test class name</li>
+<li><strong>args</strong> – Input parameters of the function to be tested. It’s type is a list of the input parameters’ value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Function run results and execution times</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.check_return_result">
+<code class="descname">check_return_result</code><span class="sig-paren">(</span><em>input_para</em>, <em>return_result</em>, <em>excepted_result</em>, <em>check_type='Part3_Test1'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.check_return_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.check_return_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compare the results returned with the expected results according to the type of check</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_para</strong> – The input parameters’ values</li>
+<li><strong>return_result</strong> – The test class returned result</li>
+<li><strong>excepted_result</strong> – Expected results in the configuration file</li>
+<li><strong>check_type</strong> – The check type, default check_type is EQUAL</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the bool check result</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.format_err">
+<code class="descname">format_err</code><span class="sig-paren">(</span><em>err_obj</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.format_err"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.format_err" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the error message. If the length of the error message is zero, return the error message “Unknown error”.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>err_obj</strong> – The error object.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The formatted error message string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.get_check_config">
+<code class="descname">get_check_config</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.get_check_config"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.get_check_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the detection configuration according to the topic configuration.
+Includes input parameters and expected output results.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">The list of input parameters and excepted value</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.get_class">
+<code class="descname">get_class</code><span class="sig-paren">(</span><em>obj_module</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.get_class"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.get_class" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets all the classes of the test script</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj_module</strong> – The module object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">the list of the class</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.get_script_summary">
+<code class="descname">get_script_summary</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.get_script_summary"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.get_script_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the check_file to generate script profile information</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the summary dict</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="check.func.FuncLib.save_log">
+<em class="property">static </em><code class="descname">save_log</code><span class="sig-paren">(</span><em>str_info</em>, <em>b_print_log=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.save_log"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.save_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the information in the log file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>str_info</strong> – The log information</li>
+<li><strong>b_print_log</strong> – The screen print log switch</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.save_result">
+<code class="descname">save_result</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.save_result"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.save_result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Program test completed, store execution results</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>kwargs</strong> – the result information</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.test_method_part3_test1">
+<code class="descname">test_method_part3_test1</code><span class="sig-paren">(</span><em>input_para</em>, <em>return_result</em>, <em>excepted_result=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.test_method_part3_test1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.test_method_part3_test1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Part3 test1 detection function</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input_para</strong> – The input parameters’ value</li>
+<li><strong>return_result</strong> – The return result</li>
+<li><strong>excepted_result</strong> – The excepted value</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">the bool result</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="check.func.FuncLib.write_col_name">
+<code class="descname">write_col_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/func.html#FuncLib.write_col_name"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.func.FuncLib.write_col_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the column name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">None</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-check.skill_script">
+<span id="check-skill-script-module"></span><h2>check.skill_script module<a class="headerlink" href="#module-check.skill_script" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="check.skill_script.TestSkillSolution">
+<em class="property">class </em><code class="descclassname">check.skill_script.</code><code class="descname">TestSkillSolution</code><a class="reference internal" href="_modules/check/skill_script.html#TestSkillSolution"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.skill_script.TestSkillSolution" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="staticmethod">
+<dt id="check.skill_script.TestSkillSolution.get_number">
+<em class="property">static </em><code class="descname">get_number</code><span class="sig-paren">(</span><em>int_range</em>, <em>int_number</em>, <em>list_scope</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/check/skill_script.html#TestSkillSolution.get_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#check.skill_script.TestSkillSolution.get_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>在指定范围内，生成一个固定元素个数的，不重复的随机列表，输出随机list中，在用户给定区间的子列表，和子列表的长度</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>int_range</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – 随机数的范围</li>
+<li><strong>int_number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – 随机数的个数</li>
+<li><strong>list_scope</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – 随机数的范围检查</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Number of non-repeated characters and a dictionary of the number of characters</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-check">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-check" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">check package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-check.auto_check">check.auto_check module</a></li>
+<li><a class="reference internal" href="#module-check.check_data">check.check_data module</a></li>
+<li><a class="reference internal" href="#module-check.func">check.func module</a></li>
+<li><a class="reference internal" href="#module-check.skill_script">check.skill_script module</a></li>
+<li><a class="reference internal" href="#module-check">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/check.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">AutoCheck 1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Iveshu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.1.
+    </div>
+  </body>
+</html>

@@ -55,7 +55,7 @@ try:
         for index, value in enumerate(list_check_data):
             # 1. Run the program to check
             clib.save_log("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++", LOG_CHECK_SUMMARY_PRINT_FLAG)
-            clib.save_log("Check index: {index}".format(index=index+1), LOG_CHECK_SUMMARY_PRINT_FLAG)
+            clib.save_log("Check data index: {index}".format(index=index+1), LOG_CHECK_SUMMARY_PRINT_FLAG)
             clib.save_log("Check  data: {data}".format(data=value))
             list_return_result, i_exe_time = clib.call_function(class_name, *value)
             clib.save_log("Return data: {result}".format(result=list_return_result))

@@ -1,1 +1,55 @@
 Name,Part_number,Test_number,Script_result,AvgTime,Item_result,Info 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 1000.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 1000.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, False, 0.0, [False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [False], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True], Nothing 
+ zukizhu, part1, test2, False, 0.0, [False], Nothing 
+ zukizhu, part1, test2, False, 1000.0, [False], Nothing 
+ zukizhu, part1, test2, False, 23200.0, [False; False; False; False; False], Nothing 
+ zukizhu, part1, test2, False, -1, [False; False; False; False], Nothing 
+ zukizhu, part1, test2, False, -1, [False; False; False; False], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 333.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 333.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, False, 333.0, [True; True; False], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True], Nothing 
+ zukizhu, part1, test2, False, 500.0, [True; True; True; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; True; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [True; True; True; False], Nothing 
+ zukizhu, part1, test2, True, 250.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True], Nothing 
+ zukizhu, part1, test2, False, -1.0, [True; True; True; False], Nothing 
+ zukizhu, part1, test2, False, -1, [False], Nothing 
+ zukizhu, part1, test2, False, -1, [False], Nothing 
+ zukizhu, part1, test2, True, 0.0, [True; True; True; True; True; True], Nothing 
+ zukizhu, part1, test2, False, -1, [False], Nothing 
+ zukizhu, part1, test2, False, 249.0, [True; True; True; False], Nothing 
+ zukizhu, part1, test2, False, -1.0, [True; True; True; False], Nothing 
+ zukizhu, part1, test2, False, 250.0, [False; False; False; False], Nothing 
+ zukizhu, part1, test2, False, 0.0, [False; False; False; False], Nothing 
+ zukizhu, part1, test2, False, -1, [False; False; False; False], Nothing 
+ zukizhu, part1, test2, True, 1500.0, [True; True; True; True], Nothing 

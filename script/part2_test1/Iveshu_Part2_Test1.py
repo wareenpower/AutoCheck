@@ -12,7 +12,7 @@ class TestSkillSolution:
     @staticmethod
     def get_dict(str_para):
         """
-        Gets the number of non-repeating characters of a string and the number of times each character appears
+        Get the number of non-repeating characters of a string and the number of times each character appears
 
         :param str str_para: The input parameter
         :return: Number of non-repeated characters and a dictionary of the number of characters

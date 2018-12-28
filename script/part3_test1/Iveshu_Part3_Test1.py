@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-import random
+# import random
 import datetime
 import numpy as np
 
@@ -21,32 +21,15 @@ class TestSkillSolution:
         :return: Number of non-repeated characters and a dictionary of the number of characters
         """
 
-        list_source, list_cmp = [], []
-
-        i_count = 0
         int_min, int_max = list_scope[0], list_scope[1]
 
-        # list_source = np.random.randint(0, int_range, int_number)
+        list_source = np.random.randint(0, int_range, int_number)
 
-        # for i_item in list_source:
-        #     if int_min <= i_item <= int_max:
-        #         list_cmp.append(i_item)
-
-        while i_count < int_number:
-
-            i_item = random.randint(0, int_range)
-            if i_item not in list_source:
-                list_source.append(i_item)
-                i_count += 1
-
-                if int_min <= i_item <= int_max:
-                    list_cmp.append(i_item)
-
-        return sorted(list_source), sorted(list_cmp), len(list_cmp)
+        list_cmp = [i for i in list(list_source) if int_min <= i <= int_max]
+        return list(list_source), list_cmp, len(list_cmp)
 
 
 if __name__ == "__main__":
-
     start = datetime.datetime.now()
     i_range = 100
     i_number = 10

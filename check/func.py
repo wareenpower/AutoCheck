@@ -191,7 +191,7 @@ class FuncLib:
         :return:  Function run results and execution times
         """
         # Record start time
-        list_func_result, i_exe_time = [], -1
+        list_func_result, i_exe_time = [], 1000000000
         try:
             begin = datetime.datetime.now()
             self.save_log("Start check class: {class_name}, start time: {begin}".format(class_name=obj_class, begin=begin))
@@ -258,6 +258,8 @@ class FuncLib:
 
             # 1. Default check type
             if check_type.upper() == "EQUAL":
+                self.save_log("Return   data: " + str(return_result))
+                self.save_log("excepted data: " + str(excepted_result))
                 if return_result == excepted_result:
                     bool_result = True
                 else:
@@ -267,7 +269,8 @@ class FuncLib:
 
             # 2. Part3_Test1 check function
             if check_type.upper() == "PART3_TEST1":
-                self.test_method_part3_test1(input_para, return_result, excepted_result)
+                bool_result = self.test_method_part3_test1(input_para, return_result, excepted_result)
+                self.save_log("check_return_result function check result: {result}".format(result=bool_result))
         except Exception as e:
             self.save_log("Get check config failed, info: {info}".format(info=self.format_err(e)))
             self.save_log(traceback.format_exc())
@@ -290,31 +293,39 @@ class FuncLib:
         self.save_log("Except data: {except_data}".format(except_data=excepted_result))
         try:
             i_range, i_number, list_scope = input_para[0], input_para[1], input_para[2]
-            list_source, list_cmp, i_len = return_result[0], return_result[1], return_result[3]
+            list_source, list_cmp, i_len = return_result[0]
+            list_source.sort()
+            list_cmp.sort()
 
             # 1. Check range array range is correct
             check_source = [i for i in list_source if 0 <= i <= i_range]
-            b_check_source = [sorted(check_source) == list_source]
+            b_check_source = sorted(check_source) == list_source
             self.save_log("Check that the range of the first return data is correct, result: {result}".format(
                 result=b_check_source))
 
             # 2. Check that the range array is a subset of random arrays
-            b_check_scope = [True if len(list(set(list_cmp).difference(set(list_source)))) == 0 else False]
+            b_check_scope = True if len(list(set(list_cmp).difference(set(list_source)))) == 0 else False
 
             # 3. Check that the range array is correct
             list_except = [i for i in list_source if list_scope[0] <= i <= list_scope[1]]
-            b_check_cmp = [sorted(list_cmp) == sorted(list_except)]
+            b_check_cmp = sorted(list_cmp) == sorted(list_except)
+            self.save_log(str(sorted(list_cmp)) + "," + str(sorted(list_except)))
 
             # 4. Check that the range of random arrays is correct
             list_check_range = [i for i in list_cmp if list_scope[0] <= i <= list_scope[1]]
-            b_check_range = [sorted(list_check_range) == list_cmp]
+            b_check_range = sorted(list_check_range) == list_cmp
 
             # 5. Check length
-            b_check_len = [i_len == len(list_cmp)]
-            b_check_first_len = [len(list_source) == i_number]
+            b_check_len = i_len == len(list_cmp)
+            self.save_log("Check scope length: {len}".format(len=b_check_len))
+            b_check_first_len = len(list_source) == i_number
 
-            b_result = all([b_check_source, b_check_scope, b_check_cmp, b_check_range, b_check_len, b_check_first_len])
+            list_result = [b_check_source, b_check_scope, b_check_cmp, b_check_range, b_check_len, b_check_first_len]
+            self.save_log("Item result: {result}".format(result=list_result))
+            b_result = all(list_result)
+            self.save_log("test_method_part3_test1 function check result: {result}".format(result=b_result))
         except Exception as e:
+            b_result = False
             self.save_log("Call test_method_part3_test1 failed, info: {info}".format(info=self.format_err(e)))
             self.save_log(traceback.format_exc())
 

@@ -1,69 +1,77 @@
-#!/usr/bin/env python
 # -*- coding:utf-8 -*-
-import collections
 
 
-class Part1Test2Solution:
+class Solution:
 
     def __init__(self):
-        self.__doc__ = "第一次练习题"
-        self.__author = "zukizhu"
+        self.__doc__ = "this is test dict for ruby"
+        self.__author = "ruby"
 
     @staticmethod
-    def _is_anagram(str_source, str_target):
+    def dict_subject(input_json, key_list, value_list):
         """
-        Given two strings s and t, return the result whether str_target is a disordered image of str_source
-
-        :param str str_source: Source string
-        :param str str_target: Target string
-        :return: the bool result
+        将字符串中某些key的值修改为给定的value，并将修改后的json字符串以字典形式输出
+        :param value_list: 需要修改的值
+        :param key_list: key的列表
+        :param input_json: 输入的字符串字典
+        :return:返回修改后的字符串
         """
-        if len(str_source) != len(str_target):
-            return False
-
-        return cmp(sorted(list(str_source.lower())),sorted(list(str_target.lower()))) == 0
+        try:
+            import json
+            dict_input = json.loads(input_json)
+            i = 0
+            for key in key_list:
+                key_split = key.split('/')
+                key_split.pop(0)
+                dict_out = Solution()._get_last_value(dict_input, key_split)
+                dict_out[key_split[-1]] = value_list[i]
+                i = i + 1
+        except Exception as e:
+            print e.message
+            pass
+        return dict(dict_input)
 
     @staticmethod
-    def zero_list(src_list):
+    def _get_last_value(input_json, key_split):
         """
-        给出一个包含整数的数组，计算出数组元素中三个值相加等于0的数据序列
-
-        :param list src_list:原始数组
-        :return:list dest_list:返回目标数组，如果没用则为空
+        根据key_split获取输入字典的待修改的值
+        :param key_split: 分割符
+        :param input_json: 输入的字符串字典
+        :return:返回修改后的字符串
         """
-        list_len= len(src_list)
-        if list_len <3:
-            return 0
+        try:
+            output_json = input_json
+            for key, value in enumerate(key_split):
+                if key == len(key_split) - 1:
+                    break
+                if isinstance(output_json, dict):
+                    output_json = output_json.get(value)
+                    continue
+                if isinstance(output_json, list):
+                    i_index = int(value)
+                    output_json = output_json[i_index]
+        except Exception as e:
+            print e.message
+            pass
+        return output_json
 
-        #print src_list
-        src_list.sort()
-        left=0 ; mid=1; right=list_len-1
-
-        count = 0
-        dest_list = []
-
-        while (left < right - 1 ):
-            while ( right > left + 1 ):
-                while (mid < right ):
-                     midValue = src_list[left] + src_list[mid] + src_list[right]
-                     if midValue == 0:
-                         dest_list.append( (src_list[left],src_list[mid],src_list[right]))
-                         count = count + 1
-                         #print det_list
-                     mid = mid + 1
-                right = right - 1
-                mid = left + 1
-            left = left + 1
-            mid = left + 1
-            right = list_len - 1
-        #dest_list = list(set(dest_list))
-        new_list = []
-        for li in dest_list:
-            if li not in new_list:
-                new_list.append(li)
-        return  new_list
 
 if __name__ == "__main__":
-    #print TestSkillSolution1.is_anagram("zuki","zski")
-    list = [5,3,7,2,1,0,-1,-8,-5]
-    print  Part1Test2Solution.zero_list(list)
+    dict_info = '''{
+        "name": "info",
+        "list_1": [
+            {"name": "1"},
+            {"name": "2"}
+        ]
+    }'''
+    input_json_src = '''{"Id": "101",
+                  "header":
+                      {"funcNo": "IF01",
+                       "mobile": "075512344565"},
+                  "payload":
+                      {"contact": {"mobile": "123456789999", "wechat": "test"}
+                       }
+                  }'''
+    key_list_src = ['/header/mobile', '/payload/contact/mobile', '/Id']
+    value_list_src = ['0755839699', '98443857', '101']
+    Solution.dict_subject(input_json_src, key_list_src, value_list_src)

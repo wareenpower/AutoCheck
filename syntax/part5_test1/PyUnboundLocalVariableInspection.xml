@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problems>
+  <problem>
+    <file>file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py</file>
+    <line>54</line>
+    <entry_point TYPE="file" FQNAME="file://$PROJECT_DIR$/script/part5_test1/Rubyyi_Part5_Test1.py" />
+    <问题类 severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Unbound local variable</问题类>
+    <描述>Local variable 'output_json' might be referenced before assignment</描述>
+  </problem>
+</problems>
+
