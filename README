@@ -36,3 +36,5 @@
     set http_proxy=http://web-proxy.tencent.com:8080
     set https_proxy=http://web-proxy.tencent.com:8080
     python -m pip install --upgrade pip
+	
+	
